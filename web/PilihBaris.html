@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='./css/css.css' rel='stylesheet' />
+    <link href='./css/umum.css' rel='stylesheet' />
+    <link href='./css/grid.css' rel='stylesheet' />
+    <style>
+        body {
+            padding: 16px;
+        }
+
+        button#tutup {
+            padding: 16px;
+        }
+
+        div#daftar {
+            width: 100%;
+            height: 100%;
+        }
+
+        button.item {
+            margin-bottom: 8px;
+            padding: 16px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ha-header class="row padding">
+        <ha-judul class="flex-grow-1">Pilih Statement</ha-judul>
+        <ha-tbl-cont>
+            <button id="tutup">x</button>
+        </ha-tbl-cont>
+    </ha-header>
+    <hr />
+    <ha-cont>
+        <button id="deklarasi-var" class="item disp-block">
+            deklarasi variable
+        </button>
+        <button id="isi-var" class="item disp-block">
+            isi variable
+        </button>
+        <button id="panggil-fungsi" class="item disp-block">
+            panggil fungsi
+        </button>
+    </ha-cont>
+
+    <script src="./js/comp/Util.js"></script>
+    <script src="./js/PilihBaris.js"></script>
+</body>
+
+</html>
